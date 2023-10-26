@@ -1,13 +1,6 @@
 {
     const tasks = [
-        {
-            content: "zrobić kupę",
-            done: false,
-        },
-        {
-            content: "zjeść pierogi",
-            done: true,
-        },
+
     ]
 
     const addNewTask = (newTaskContent) => {
@@ -83,6 +76,8 @@
         event.preventDefault();
 
         const newTaskContent = document.querySelector(".js-newTask").value.trim();
+
+        document.querySelector(".js-newTask").focus();
 
         if (newTaskContent === "") {
             return;
